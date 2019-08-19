@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1" />
+					
+			<title>Template BootStrap</title>
+		
+			
+			 <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+			 
+			 
+			<!-- Custom   CSS/Bootstrap -->
+			<link rel="stylesheet" type="text/css" href="css/custom.css">
+			<!--  usage of Bootstrap’s glyphicons. -->
+			<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+			<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+			<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		</head>
+			
+<body>
+
+<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand">BANQUE EN LIGNE</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#">Accueil</a>
+        </li>
+				<li class="dropdown">
+	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contacter son Gestionnaire <b class="caret"></b></a>
+	        <ul class="dropdown-menu">
+	          <li><a href="#">Prendre RDV</a></li>
+	          <li><a href="#">Envoyer un Message</a></li>
+	          <li><a href="#">Signaler un Problème sur sa CB</a></li>
+	          <li><a href="#">Autres</a></li>
+	        </ul>
+	      </li>
+        <li>
+          <a href="#">Consulter Solde</a>
+        </li>
+        <li>
+          <a href="#">Historique des Operations</a>
+        </li>
+        <li class="active">
+          <a href="#">Virement</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- An article is intended to be independently distributable or reusable.
+A section is a thematic grouping of content. -->
+
+<section>
+ <div class="container">
+		<br/>
+		<br/>
+		<br/>
+      <div class="page-header">
+        <h1>Fomulaires <small>Exemple BootStrap</small></h1>
+      </div>
+
+    
+    <article>
+	
+		<div class="container">
+			<h2>Contact</h2>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="well well-sm">
+							<form class="form-horizontal" method="post">
+								<fieldset>
+									<legend class="text-center header">Contact us</legend>
+
+									<div class="form-group">
+										<span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+										<div class="col-md-8">
+											<input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+										</div>
+									</div>
+									<div class="form-group">
+										<span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+										<div class="col-md-8">
+											<input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+										<div class="col-md-8">
+											<input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+										<div class="col-md-8">
+											<input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+										<div class="col-md-8">
+											<textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<div class="col-md-12 text-center">
+											<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+										</div>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+		</div>
+	
+	</article>
+
+	<article>
+	 <div class="page-header">
+			<h2> Tableau <small> Notes </small> </h2>
+	</div>
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped">
+				<thead>
+				<tr>
+				<th>Matière</th>
+				<th>Coeff</th>
+				<th>Moyenne</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td class="active">Maths</td>
+					<td class="success"> 5</td>
+					<td>17</td>
+				</tr>
+				<tr>
+					<td>Français</td>
+					<td class="info">3</td>
+					<td>12</td>
+				</tr>
+				<tr>
+					<td class="danger">Anglais</td>
+					<td>2</td>
+					<td class="warning">15</td>
+				</tr>
+				</tbody>
+		</table>
+	</div>
+	</article>
+  
+    <article>
+	<div class="container">	
+		 
+		 <div class="page-header">
+			<h2> PAYER <small> avec CB</small> </h2>
+		</div>
+		<form action="#" class="credit-card-div">
+				<div class="panel panel-default" >
+					<div class="panel-heading">
+					 
+						<div class="row ">
+							  <div class="col-md-12">
+								  <input type="text" class="form-control" placeholder="Enter Card Number" />
+							  </div>
+						</div>
+						<div class="row ">
+								  <div class="col-md-3 col-sm-3 col-xs-3">
+									  <span class="help-block text-muted small-font" > Expiry Month</span>
+									  <input type="text" class="form-control" placeholder="MM" />
+								  </div>
+							 <div class="col-md-3 col-sm-3 col-xs-3">
+									  <span class="help-block text-muted small-font" >  Expiry Year</span>
+									  <input type="text" class="form-control" placeholder="YY" />
+								  </div>
+							<div class="col-md-3 col-sm-3 col-xs-3">
+									  <span class="help-block text-muted small-font" >  CCV</span>
+									  <input type="text" class="form-control" placeholder="CCV" />
+								  </div>
+							 <div class="col-md-3 col-sm-3 col-xs-3">
+								<img  width="100" height="100" title="Carte de credit" alt="Carte de credit" src="images/creditcard.png" class="img-rounded" />
+							 </div>
+						 </div>
+						<div class="row ">
+							  <div class="col-md-12 pad-adjust">
+
+								  <input type="text" class="form-control" placeholder="Name On The Card" />
+							  </div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 pad-adjust">
+								<div class="checkbox">
+									<label>
+									  <input type="checkbox" checked class="text-muted"> Save details for fast payments <a href="#"> learn how ?</a>
+									</label>
+								</div>
+							</div>
+						</div>
+					   <div class="row ">
+							<div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+								 <input type="submit"  class="btn btn-danger" value="CANCEL" />
+							  </div>
+							  <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+								  <input type="submit"  class="btn btn-warning btn-block" value="PAY NOW" />
+							  </div>
+						 </div>
+					 
+					</div>
+				</div>
+		</form>
+	</div>
+	</article>
+	
+	<br/>
+		<br/>
+	<article>
+	
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<button type="button" class="btn btn-icon"><i class="fa fa-user fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-users fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-mobile fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></button>
+				</div>
+				<div class="col-md-6 col-md-offset-3">
+					<button type="button" class="btn btn-icon"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-file-o fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-calculator fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-calendar fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-calendar-check-o fa-2x" aria-hidden="true"></i></button>
+				</div>
+				<div class="col-md-6 col-md-offset-3">
+					<button type="button" class="btn btn-icon"><i class="fa fa-camera fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-picture-o fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-paint-brush fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-laptop fa-2x" aria-hidden="true"></i></button>
+				</div>
+				<div class="col-md-6 col-md-offset-3">
+					<button type="button" class="btn btn-icon"><i class="fa fa-usd fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-money fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-eur fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-folder-o fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-folder-open-o fa-2x" aria-hidden="true"></i></button>
+				</div>
+				<div class="col-md-6 col-md-offset-3">
+					<button type="button" class="btn btn-icon"><i class="fa fa-home fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-clock-o fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-key fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-bar-chart fa-2x" aria-hidden="true"></i></button>
+					<button type="button" class="btn btn-icon"><i class="fa fa-pie-chart fa-2x" aria-hidden="true"></i></button>
+				</div>
+			</div>
+		</div>
+	</article>
+	
+	<article>
+		<div class="center"><button data-toggle="modal" data-target="#squarespaceModal" class="btn btn-primary center-block">Afficher MODAL  POPPUP</button></div>
+
+				<div class="modal fade alert" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+					  <div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+								<h3 class="modal-title" id="lineModalLabel">Modal Login Window</h3>
+							</div>
+							<div class="modal-body">
+								<form>
+								  <div class="form-group">
+									<label for="exampleInputEmail1">Email address</label>
+									<input type="email" class="form-control" id="user-email1" placeholder="Enter email">
+								  </div>
+								  
+								  <div class="form-group">
+									<label for="exampleInputPassword1">Password</label>
+									<input type="password" class="form-control" id="user-email2" placeholder="Enter Password">
+								  </div>
+								  <div class="checkbox">
+									<label>
+									  <input type="checkbox"> Remember login
+									</label>
+								  </div>
+								  <button type="submit" class="btn btn-primary center-block">Login</button>
+								</form>
+							</div>
+						</div>
+					  </div>
+				</div>
+
+	
+	</article>
+  </div>
+</section>
+
+<br/>
+		<br/>
+
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="nav nav-pills nav-justified">
+				 <li><a href="#"> Banque en Ligne </a></li>
+                
+                <li><a href="/">© 2019  MACROSOFT AS.</a></li>
+				
+				<li><a href="#"> Banque 3.0 </a></li>
+				
+				<address>
+
+               
+            </ul>
+        </div>
+    </div>
+	
+	<div class="row">
+	 <div class="col-lg-12">
+	 <p class="text-center">
+			<strong>MACROSOFT AS, Inc.</strong><br>
+			1355 Market Street, Suite 900<br>
+		San Francisco, CA 94103<br>
+		<abbr title="Phone">P:</abbr> (123) 456-7890</address>
+	 </p>
+	</div>	
+	 </div>
+</footer>
+        
+		
+</body>
+</html>
