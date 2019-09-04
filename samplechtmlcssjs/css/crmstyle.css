@@ -1,0 +1,105 @@
+
+/*   selector,propertie:value */
+/* background, color */
+/* Font Generator */
+/* Color Picker */
+/* float:left; float:right; float/position*/
+/* margin, border,padding,content */
+/*  Gradient, box shadow,tranform  */
+/* Button generator */
+/* border /outline */
+/* Media Queries  */
+/* Reset CSS */
+/*  https://htmlcheatsheet.com/css/  */
+
+body{
+
+
+}
+
+/* # id */
+
+#container {
+	/*width: 800px;*/
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#content {
+	padding: 10px;
+	
+}
+
+#header {
+	background-color: #66CCFF;
+	color: white;
+	text-align: center;
+}
+
+#nav {
+	width: 180px;
+	float: left;
+}
+
+#nav ul {
+	list-style-type: none;
+}
+
+/* class */
+#nav.selected {
+	font-weight: bold;
+}
+
+#main {
+	width: 600px
+	float: right;
+}
+
+#footer {
+	clear: both;
+	text-align: center;
+}
+
+
+
+
+
+/*
+-- Les mots clés  selector, property, value
+selector {
+  property: value;
+}*/
+
+/*
+https://stackoverflow.com/questions/12871710/what-does-the-css-rule-clear-both-do
+CSS | clear Property
+none: It has a default value. ...
+left: This property specifies that elements are not allowed to Float on the left side in relation to other element. ...
+right: It means elements are not allowed to float on the right side. ...
+both: It means floating elements are not allowed to float on the both sides.
+
+*/
+
+/*
+-- Les  mots clés de type "régles" (exemple media query) (si .. alors)
+
+Nouvelles règles si la fenêtre fait au plus 1024px de large
+media: type d'écran de sortie. Quelques-unes des valeurs possibles :
+screen: écran « classique » ;
+handheld: périphérique mobile ;
+print: impression ;
+tv: télévision ;
+projection: projecteur ;
+all: tous les types d'écran
+@media screen and (max-width: 1024px)
+{
+    p
+    {
+        color: red; 
+        background-color: black;
+        font-size: 1.2em;
+    }
+}
+
+*/
